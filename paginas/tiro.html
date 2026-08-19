@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/tiroEstilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conteiner">
+        <p><a href="../index.html">Voltar</a></p>
+        <h1>Tiro</h1>
+        <div class="conteiner-grid">
+            <label>Potencia da arma</label>
+            <input type="number">
+            <label>Dano da arma</label>
+            <input tpe="number" id="danoArma">
+            <label type="number">Resistência do personagem inimigo</label>
+            <select id="resistencia">
+                <option value="um">1</option>
+                <option value="dois">2</option>
+                <option value="tres">3</option>
+                <option value="quatro">4</option>
+                <option value="5">5</option>
+            </select>
+            <label>Distância</label>
+            <select id="distância">
+                <option value="perto">Perto</option>
+                <option value="longe">Longe</option>
+                <option value="queimaRoupa">Queima roupa</option>
+            </select>
+            <div class="conteiner-button">
+                 <button onclick="resultado()">Resultado</button>
+            </div>
+        </div>
+        <div class="resultado">
+
+        </div>
+    </div>
+</body>
+</html>

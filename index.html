@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <p><a href="./paginas/tiro.html">Tiro</a></p>
+        </div>
+        <div>
+            <p><a href="./paginas/combate.html">Combate</a></p>
+        </div>
+        <div>
+            <p><a href="./paginas/resistenciaObjeto.html">Resistência de objetos</a></p>
+        </div>
+    </nav>
+
+    <div class="primeiraDiv">
+        <div class="conteiner">
+            <div class="conteiner-grid">
+                <div>
+                    <h1>Dados</h1>
+                    <h3>Insira as informações dos personagens</h3>
+                    <label>Nome</label>
+                    <input type="text" id="nomePersonagem">
+                </div>
+                <div class="conteiner-grid-checkbox">
+                     <label>Defesa</label>
+                     <input type="checkbox" id="defesa">
+                     <label>valor</label>
+                     <input type="number" id="numberDefesa">
+                </div>
+                <div class="conteiner-grid-checkbox">
+                    <label>Agilidade</label>
+                    <input type="checkbox" id="agilidade">
+                    <label>valor</label>
+                    <input type="number" id="numberAgilidade">
+                </div>
+                <div class="conteiner-grid-checkbox">
+                    <label>Gatilho</label>
+                    <input type="checkbox" id="gatilho">
+                    <label>valor</label>
+                    <input type="number" id="numberGatilho">
+                </div>
+                <div class="conteiner-grid-checkbox">
+                    <label>Força</label>
+                    <input type="checkbox" id="forca">
+                    <label>Valor</label>
+                    <input type="number" id="numberForca">
+                </div>
+                <div class="conteiner-btn">
+                    <button onclick="inserirDados()">Inserir</button>
+                </div>
+            </div>
+        
+        <div class="conteiner-objetos">
+                <div>
+                    <h1>Dados</h1>
+                    <h3>Insira as informações dos objetos</h3>
+                    <label>Nome</label>
+                    <input type="text" id="nomePersonagem">
+                </div>
+                <div class="conetiner-objetos-select">
+                    <label>Resistência</label>
+                <select id="resistenciaObjeto">
+                    <option value="um" id="um">1</option>
+                    <option value="dois" id="dois">2</option>
+                    <option value="tres" id="tres">3</option>
+                    <option value="quatro" id="quatro">4</option>
+                    <option value="cinco" id="cinco">5</option>
+                </select>
+                </div>
+                <div class="conteiner-btn">
+                    <button onclick="inserirDadosObjetos()">Inserir</button>
+                </div>
+            </div>
+        </div>
+       </div> 
+    </div>
+</body>
+</html>
