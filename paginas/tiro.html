@@ -6,11 +6,18 @@
     <link rel="stylesheet" href="../estilos/tiroEstilo.css">
     <title>Document</title>
 </head>
-<body>
+<body>        
+    <p class="p"><a href="../index.html">Voltar</a></p>
     <div class="conteiner">
-        <p><a href="../index.html">Voltar</a></p>
+
         <h1>Tiro</h1>
         <div class="conteiner-grid">
+            <label>Atirador</label>
+            <select id="atirador">
+                <option value='default'>Escolha</option>
+            </select>
+            <label>Alvo</label>
+            <select id ='alvo'><option value="Alvo_default">Escolha</option></select>
             <label>Potencia da arma</label>
             <input type="number">
             <label>Dano da arma</label>

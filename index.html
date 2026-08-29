@@ -8,13 +8,13 @@
 </head>
 <body>
     <nav>
-        <div>
+        <div class="nav-div-a">
             <p><a href="./paginas/tiro.html">Tiro</a></p>
         </div>
-        <div>
+        <div  class="nav-div-a">
             <p><a href="./paginas/combate.html">Combate</a></p>
         </div>
-        <div>
+        <div  class="nav-div-a">
             <p><a href="./paginas/resistenciaObjeto.html">Resistência de objetos</a></p>
         </div>
     </nav>
@@ -30,30 +30,30 @@
                 </div>
                 <div class="conteiner-grid-checkbox">
                      <label>Defesa</label>
-                     <input type="checkbox" id="defesa">
+                     <input type="checkbox" class='shared'id="defesa">
                      <label>valor</label>
                      <input type="number" id="numberDefesa">
                 </div>
                 <div class="conteiner-grid-checkbox">
                     <label>Agilidade</label>
-                    <input type="checkbox" id="agilidade">
+                    <input type="checkbox" class='shared' id="agilidade">
                     <label>valor</label>
                     <input type="number" id="numberAgilidade">
                 </div>
                 <div class="conteiner-grid-checkbox">
                     <label>Gatilho</label>
-                    <input type="checkbox" id="gatilho">
+                    <input type="checkbox" class='shared' id="gatilho">
                     <label>valor</label>
                     <input type="number" id="numberGatilho">
                 </div>
                 <div class="conteiner-grid-checkbox">
                     <label>Força</label>
-                    <input type="checkbox" id="forca">
+                    <input type="checkbox" class='shared' id="forca">
                     <label>Valor</label>
                     <input type="number" id="numberForca">
                 </div>
                 <div class="conteiner-btn">
-                    <button onclick="inserirDados()">Inserir</button>
+                    <button id="btn_dados_personagem">Inserir</button>
                 </div>
             </div>
         
@@ -62,7 +62,7 @@
                     <h1>Dados</h1>
                     <h3>Insira as informações dos objetos</h3>
                     <label>Nome</label>
-                    <input type="text" id="nomePersonagem">
+                    <input type="text" id="nomeObjeto">
                 </div>
                 <div class="conetiner-objetos-select">
                     <label>Resistência</label>
@@ -81,5 +81,7 @@
         </div>
        </div> 
     </div>
+    <script type='module' src="main.js"></script>
+    <script type="module" src="./banco/banco.js"></script>
 </body>
 </html>

@@ -1,0 +1,18 @@
+package com.exemplo.api.model // 1. Define o pacote/pasta deste arquivo
+
+import jakarta.persistence.* // 2. Importa as anotações do JPA (Java Persistence API)
+
+@Entity // 3. Diz ao Spring/Hibernate que esta classe é uma tabela no banco de dados
+@Table(name = "clientes") // 4. Define explicitamente o nome da tabela no PostgreSQL
+class Cliente( // 5. Declara a classe Cliente com seu construtor principal
+
+    @Id // 6. Define o campo abaixo como a Chave Primária (Primary Key) da tabela
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // 7. Configura o ID como serial (auto-incremento pelo banco)
+    val id: Long? = null, // 8. Campo ID, começa nulo e o banco preenche. É do tipo Long.
+
+    @Column(name = "nome", nullable = false) // 9. Mapeia a coluna 'nome' e define que ela não pode ser nula
+    var nome: String, // 10. Campo de texto para o nome do cliente. 'var' permite alteração.
+
+    @Column(name = "email", nullable = false, unique = true) // 11. Mapeia a coluna 'email', não nula e única no banco
+    var email: String // 12. Campo de texto para o email do cliente.
+)

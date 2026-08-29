@@ -1,0 +1,16 @@
+package com.exemplo.api.repository // 1. Define o pacote do repositório
+
+import aula.backend.api.Cliente // 2. Importa o modelo Cliente que criamos acima
+
+import org.springframework.data.jpa.repository.JpaRepository       // 3. Importa a interface base do Spring Data
+import org.springframework.stereotype.Repository                   // 4. Importa a anotação de componente do Spring
+
+@Repository // 5. Indica ao Spring que esta interface gerencia o acesso aos dados
+interface ClienteRepository : JpaRepository<Cliente, Long>
+
+
+
+// 6. Cria a interface herdando de JpaRepository. 
+// 7. Passamos 'Cliente' (a entidade) e 'Long' (o tipo do ID do cliente).
+// 8. Só com isso, o Spring já cria internamente os métodos buscar, salvar, deletar e atualizar.
+ 
