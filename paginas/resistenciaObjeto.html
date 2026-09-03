@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../estilos/resistenciaObjEstilo.css">
+    <title>Resistência dos objetos</title>
 </head>
 <body>
-    
+        <p class="p"><a href="../index.html">Voltar</a></p>
+    <div class="conteiner">
+        <h1>Resistência dos objetos</h1>
+        <div class="conteiner-grid">
+            <label>Atirador</label>
+            <select id="atirador">           
+            </select>
+            <label>Objeto</label>
+            <select id ='objeto'>
+            </select>
+            <label>Potencia da arma</label>
+            <input type="number" id="potenciaArma">
+            <div class="conteiner-button">
+                 <button id="resultado">Resultado</button>
+            </div>
+        </div>
+        <div class="telaResultado">
+
+        </div>
+    </div>
+    <script type = 'module' src="../scripts/resistenciaObj.js"></script>
+    <script type="module" src="../banco/bancoObjetos.js"></script>
 </body>
 </html>

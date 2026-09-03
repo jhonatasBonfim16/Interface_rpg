@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <title>Document</title>
+    <title>RPG Calcs</title>
 </head>
+
 <body>
     <nav>
         <div class="nav-div-a">
             <p><a href="./paginas/tiro.html">Tiro</a></p>
         </div>
-        <div  class="nav-div-a">
-            <p><a href="./paginas/combate.html">Combate</a></p>
+        <div class="nav-div-a">
+            <p><a href="./paginas/fichas.html">Fichas</a></p>
         </div>
-        <div  class="nav-div-a">
+        <div class="nav-div-a">
             <p><a href="./paginas/resistenciaObjeto.html">Resistência de objetos</a></p>
         </div>
     </nav>
@@ -29,10 +31,10 @@
                     <input type="text" id="nomePersonagem">
                 </div>
                 <div class="conteiner-grid-checkbox">
-                     <label>Defesa</label>
-                     <input type="checkbox" class='shared'id="defesa">
-                     <label>valor</label>
-                     <input type="number" id="numberDefesa">
+                    <label>Defesa</label>
+                    <input type="checkbox" class='shared' id="defesa">
+                    <label>valor</label>
+                    <input type="number" id="numberDefesa">
                 </div>
                 <div class="conteiner-grid-checkbox">
                     <label>Agilidade</label>
@@ -52,12 +54,20 @@
                     <label>Valor</label>
                     <input type="number" id="numberForca">
                 </div>
+                <label type="number">Resistência do personagem</label>
+                <select id="resistencia">
+                    <option value="um">1</option>
+                    <option value="dois">2</option>
+                    <option value="tres">3</option>
+                    <option value="quatro">4</option>
+                    <option value="5">5</option>
+                </select>
                 <div class="conteiner-btn">
                     <button id="btn_dados_personagem">Inserir</button>
                 </div>
             </div>
-        
-        <div class="conteiner-objetos">
+
+            <div class="conteiner-objetos">
                 <div>
                     <h1>Dados</h1>
                     <h3>Insira as informações dos objetos</h3>
@@ -66,22 +76,23 @@
                 </div>
                 <div class="conetiner-objetos-select">
                     <label>Resistência</label>
-                <select id="resistenciaObjeto">
-                    <option value="um" id="um">1</option>
-                    <option value="dois" id="dois">2</option>
-                    <option value="tres" id="tres">3</option>
-                    <option value="quatro" id="quatro">4</option>
-                    <option value="cinco" id="cinco">5</option>
-                </select>
+                    <select id="resistenciaObjeto">
+                        <option value="um" id="um">1</option>
+                        <option value="dois" id="dois">2</option>
+                        <option value="tres" id="tres">3</option>
+                        <option value="quatro" id="quatro">4</option>
+                        <option value="cinco" id="cinco">5</option>
+                    </select>
                 </div>
                 <div class="conteiner-btn">
-                    <button onclick="inserirDadosObjetos()">Inserir</button>
+                    <button id="inserirDadosObjetos">Inserir</button>
                 </div>
             </div>
         </div>
-       </div> 
+    </div>
     </div>
     <script type='module' src="main.js"></script>
     <script type="module" src="./banco/banco.js"></script>
 </body>
+
 </html>
