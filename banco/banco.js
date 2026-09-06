@@ -1,16 +1,16 @@
 
-export function load() {
+window.load = function() {
     const dados = localStorage.getItem("bdPersonagem");
     return dados ? JSON.parse(dados) : [];
 }
 
-export function adicionarPersonagem(novoPersonagem) {
+window.adicionarPersonagem = function (novoPersonagem) {
     let bancoAtual = load()
     bancoAtual.push(novoPersonagem);
     save(bancoAtual); // Salva automaticamente
 }
 
-export function edit(index, dados){
+window.edit = function(index, dados){
     let bancoAtual = load()
     if(bancoAtual[index]){
         bancoAtual.splice(index, 1, dados)
@@ -18,7 +18,7 @@ export function edit(index, dados){
     }
 
 }
-export function save(bancoAtual) {
+window.save = function(bancoAtual) {
     console.log(bancoAtual)
     localStorage.setItem("bdPersonagem", JSON.stringify(bancoAtual));
 }

@@ -1,5 +1,3 @@
-import { loadObjetos, editObjetos } from '../banco/bancoObjetos.js'
-import { load } from '../banco/banco.js'
 
 const atiradorInput = document.getElementById("atirador")
 const objetoInput = document.getElementById("objeto")

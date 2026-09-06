@@ -1,5 +1,27 @@
 body{
-       background-color: rgb(126, 40, 14);
+
+  
+  /* Gradiente alternando apenas entre Vermelho e Azul */
+  background: linear-gradient(120deg, rgb(255, 0, 0), rgb(0, 0, 255), rgb(255, 0, 0));
+  
+  /* Mantém o fundo esticado para permitir o movimento */
+  background-size: 200% 200%;
+  
+  /* Animação contínua e infinita */
+  animation: efeitoRgbSemVerde 60s ease infinite;
+}
+
+/* Movimentação do fundo para misturar o vermelho e o azul */
+@keyframes efeitoRgbSemVerde {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .p{
     position: relative;

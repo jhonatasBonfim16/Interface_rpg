@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
+    <!-- Copie e cole exatamente esta linha no seu <head> -->
     <title>RPG Calcs</title>
 </head>
 
 <body>
     <nav>
         <div class="nav-div-a">
-            <p><a href="./paginas/tiro.html">Tiro</a></p>
+            <p><a href="./paginas/tiro.html">Tiroteio</a></p>
         </div>
         <div class="nav-div-a">
             <p><a href="./paginas/fichas.html">Fichas</a></p>
@@ -24,36 +25,38 @@
     <div class="primeiraDiv">
         <div class="conteiner">
             <div class="conteiner-grid">
+                <h1>Cadastro de Personagem</h1>      
+                <h3>Insira as informações dos personagens</h3>
                 <div>
-                    <h1>Dados</h1>
-                    <h3>Insira as informações dos personagens</h3>
+
                     <label>Nome</label>
                     <input type="text" id="nomePersonagem">
                 </div>
+
                 <div class="conteiner-grid-checkbox">
-                    <label>Defesa</label>
-                    <input type="checkbox" class='shared' id="defesa">
-                    <label>valor</label>
-                    <input type="number" id="numberDefesa">
+                    <input type="checkbox" class="shared" data-input="#numberDefesa"> Defesa
+                    <input type="number" id="numberDefesa" max="30" disabled>
                 </div>
-                <div class="conteiner-grid-checkbox">
-                    <label>Agilidade</label>
-                    <input type="checkbox" class='shared' id="agilidade">
-                    <label>valor</label>
-                    <input type="number" id="numberAgilidade">
+                <div>
+                    <input type="checkbox" class="shared" data-input="#numberAgilidade"> Agilidade
+                    <input type="number" id="numberAgilidade" max="30" disabled>
                 </div>
-                <div class="conteiner-grid-checkbox">
-                    <label>Gatilho</label>
-                    <input type="checkbox" class='shared' id="gatilho">
-                    <label>valor</label>
-                    <input type="number" id="numberGatilho">
+                <div>
+                    <input type="checkbox" class="shared" data-input="#numberGatilho"> Gatilho
+                    <input type="number" id="numberGatilho" max="30" disabled>
                 </div>
-                <div class="conteiner-grid-checkbox">
-                    <label>Força</label>
-                    <input type="checkbox" class='shared' id="forca">
-                    <label>Valor</label>
-                    <input type="number" id="numberForca">
+                <div>
+                    <input type="checkbox" class="shared" data-input="#numberForca"> Força
+                    <input type="number" id="numberForca" max="30" disabled>
                 </div>
+
+
+
+
+
+
+
+
                 <label type="number">Resistência do personagem</label>
                 <select id="resistencia">
                     <option value="um">1</option>
@@ -69,7 +72,7 @@
 
             <div class="conteiner-objetos">
                 <div>
-                    <h1>Dados</h1>
+                    <h1>Cadastro de objetos</h1>
                     <h3>Insira as informações dos objetos</h3>
                     <label>Nome</label>
                     <input type="text" id="nomeObjeto">
@@ -90,9 +93,21 @@
             </div>
         </div>
     </div>
-    </div>
-    <script type='module' src="main.js"></script>
-    <script type="module" src="./banco/banco.js"></script>
-</body>
+    </div>    
+    <!-- Copie e cole exatamente esta linha antes do seu <script> de lógica -->
 
+
+
+    <div class="show">
+        <div width="300px">
+            <h1 id="textoAlerta">valor</h1>
+        </div>
+        <div width="300px">
+            <button id="showBotao">OK</button>
+        </div>    
+    </div>
+    <script src="./banco/banco.js"></script>
+    <script src="./banco/bancoObjetos.js"></script>
+    <script src="main.js"></script>
+</body>
 </html>

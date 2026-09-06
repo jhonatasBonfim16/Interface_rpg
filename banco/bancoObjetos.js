@@ -1,23 +1,23 @@
-export function loadObjetos() {
+window.loadObjetos = function () {
     const dados = localStorage.getItem("bdObjetos");
     return dados ? JSON.parse(dados) : [];
 }
 
-export function adicionarObjetos(novoObjeto){
+window.adicionarObjetos = function(novoObjeto){
     let bancoAtual = loadObjetos()
     bancoAtual.push(novoObjeto);
     save(bancoAtual); // Salva automaticamente
 }
 
 
-export function editObjetos(index, dados){
+window.editObjetos = function(index, dados){
     let bancoAtual = loadObjetos()
     if(bancoAtual[index]){
         bancoAtual.splice(index, 1, dados)
         save(bancoAtual)
     }
 }
-export function save(bancoAtual) {
+window.save = function (bancoAtual) {
     console.log(bancoAtual)
     localStorage.setItem("bdObjetos", JSON.stringify(bancoAtual));
 }

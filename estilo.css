@@ -1,6 +1,30 @@
 body{
-    background-color: rgba(153, 58, 58, 0.836);
+
+  
+  /* Gradiente alternando apenas entre Vermelho e Azul */
+  background: linear-gradient(120deg, rgb(255, 0, 0), rgb(0, 0, 255), rgb(255, 0, 0));
+  
+  /* Mantém o fundo esticado para permitir o movimento */
+  background-size: 200% 200%;
+  
+  /* Animação contínua e infinita */
+  animation: efeitoRgbSemVerde 60s ease infinite;
 }
+
+/* Movimentação do fundo para misturar o vermelho e o azul */
+@keyframes efeitoRgbSemVerde {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
 
 nav{
     display: flex;
@@ -109,4 +133,51 @@ button:hover{
 
 .checkbox{
     cursor:pointer;
+}
+
+.show{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left:800px;
+    top:300px;
+    width:300px;
+    height: 150px;
+    text-align: center;
+    color:white;
+    visibility: hidden;
+}
+.show div{
+  box-shadow: 4px 4px 4px 4px black;;
+  /* Gradiente alternando apenas entre Vermelho e Azul */
+  background: linear-gradient(120deg, rgb(255, 0, 0), rgb(0, 0, 255), rgb(255, 0, 0));
+  
+  /* Mantém o fundo esticado para permitir o movimento */
+  background-size: 200% 200%;
+  
+  /* Animação contínua e infinita */
+  animation: efeitoRgbSemVerde 40s ease infinite;
+}
+
+/* Movimentação do fundo para misturar o vermelho e o azul */
+@keyframes efeitoRgbSemVerde {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#showBotao{
+    width:80px;
+    height:40px;
+    color:white;
+    background-color: black;
+    border-radius:5px;
+    font-weight: bold;
+    cursor:pointer
 }

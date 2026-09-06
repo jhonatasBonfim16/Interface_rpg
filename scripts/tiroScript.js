@@ -1,4 +1,3 @@
-import { load, edit } from '../banco/banco.js'
 
 
 const atiradorInput = document.getElementById("atirador")

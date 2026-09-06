@@ -1,4 +1,3 @@
-import { load } from '../banco/banco.js'
 
 const tela = document.querySelector(".conteiner")
 tela.innerHTML = '' 
