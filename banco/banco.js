@@ -5,13 +5,13 @@ window.loadPersonagens = function() {
 }
 
 window.adicionarPersonagem = function (novoPersonagem) {
-    let bancoAtual = load()
+    let bancoAtual = loadPersonagens()
     bancoAtual.push(novoPersonagem);
     save(bancoAtual); // Salva automaticamente
 }
 
 window.edit = function(index, dados){
-    let bancoAtual = load()
+    let bancoAtual = loadPersonagens()
     if(bancoAtual[index]){
         bancoAtual.splice(index, 1, dados)
         save(bancoAtual)
