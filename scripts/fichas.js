@@ -2,7 +2,7 @@
 const tela = document.querySelector(".conteiner")
 tela.innerHTML = '' 
 
-const dados = load()
+const dados = loadPersonagens()
 
 window.onload = function () {
     dados.forEach(item => {

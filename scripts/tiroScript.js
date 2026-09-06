@@ -11,7 +11,7 @@ var telaResultado = document.querySelector(".telaResultado")
 var dadosPersonagem;
 
 function atualiza() {
-    dadosPersonagem = load()
+    dadosPersonagem = loadPersonagens()
 }
 
 window.onload = function () {

@@ -1,5 +1,5 @@
 
-window.load = function() {
+window.loadPersonagens = function() {
     const dados = localStorage.getItem("bdPersonagem");
     return dados ? JSON.parse(dados) : [];
 }

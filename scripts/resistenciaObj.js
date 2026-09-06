@@ -13,7 +13,7 @@ function atualizaObjetos() {
 }
 
 window.onload = function () {
-    dadosPersonagem = load()
+    dadosPersonagem = loadPersonagens()
     console.log('jasdfsa')
     atualizaObjetos()
 
